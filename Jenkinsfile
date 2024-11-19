@@ -3,7 +3,8 @@ pipeline {
   stages {
     stage('RunXtitreAuto') {
       steps {
-        sh 'RunXtitreAuto.py'
+        // Utiliser 'bat' pour exécuter une commande sous Windows
+        bat 'python RunXtitreAuto.py'
       }
     }
   }
