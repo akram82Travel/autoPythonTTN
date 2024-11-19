@@ -1,0 +1,386 @@
+-------------------------------------------
+2024-11-09
+MAS INTERNATIONALE SENEGAL
+SELECT * FROM tiers WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE 'MAS INTERNATIONALE SENEGAL'
+MAS INTERNATIONALE SENEGAL
+CLT21020026
+['UIBE']
+select distinct Banque_XRT from Banque where Banque_XRT is not null AND Banque_XRT LIKE '%s'
+
+                    INSERT INTO [dbo].[xtitre]
+                        ([KeyTitre]
+                   ,[Titre_Num]
+                   ,[DateDomicilation]
+                   ,[FactNum]
+                   ,[Tiers_Code]
+                   ,[Fournisseur]
+                   ,[Titre_Banque]
+                   ,[Titre_Mnt]
+                   ,[Titre_Devise]
+                   ,[ModePaiement]
+                   ,[DelaisReg]
+                   ,[DateBL]
+                   ,[DateEcheance]
+                   ,[Etat_Titre]
+                   ,[TypeDoss]
+                   ,[NDoss]
+                   ,[NTTN]
+                   ,[ID_XReleveH]
+                   ,[NumPiece]
+                   ,[BureauDouane]
+                   ,[DelaiPaiement]
+                   ,[IncotermeTTN]
+                   ,[ListeBanques]
+                   ,[LstDocReg]
+                   ,[TRSTModePaiement]
+                   ,[RegimeStat]
+                   ,[TypeDDM]
+                   ,[User_Id_Create])
+                     VALUES (
+                    8807e03f-d0aa-4ea3-b02f-6b79d3a9f3aa, 
+        			   3642540, 
+        			   2024-11-08 00:00:00, 
+        			   FAC-240323  FAC-240324, 
+        			   CLT21020026, 
+        			   MAS INTERNATIONALE SENEGAL, 
+        			   UIB01, 
+        			   52544.36, 
+        			   EUR, 
+        			   NULL, 
+                       NULL,
+        			   NULL,
+        				NULL, 
+        				1,
+        				FDE,
+        				D786TCEAP_22_W, 
+        				79589347, 
+        				NULL, 
+        				NULL, 
+                        NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL,
+        				TTNAUTO
+
+                    )
+        
+------ Inserted 1 new records into xtitre ------
+----------------------------------
+2024-11-13
+PULVERIT S.P.A
+2
+PULVERIT S.P.A
+words == PULVERIT S.P.A
+SELECT * FROM tiers WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE 'PULVERIT S.P.A'
+----------------------------------
+2024-11-13
+PULVERIT S.P.A
+2
+PULVERIT S.P.A
+words == PULVERIT S.P.A
+SELECT * FROM tiers WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE 'PULVERIT S.P.A'
+----------------------------------
+2024-11-13
+PULVERIT S.P.A
+2
+PULVERIT S.P.A
+SELECT * FROM tiers WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE ''
+
+CLT20030017
+['BIAT']
+select distinct Banque_XRT from Banque where Banque_XRT is not null AND Banque_XRT LIKE '%s'
+
+                    INSERT INTO [dbo].[xtitre]
+                        ([KeyTitre]
+                   ,[Titre_Num]
+                   ,[DateDomicilation]
+                   ,[FactNum]
+                   ,[Tiers_Code]
+                   ,[Fournisseur]
+                   ,[Titre_Banque]
+                   ,[Titre_Mnt]
+                   ,[Titre_Devise]
+                   ,[ModePaiement]
+                   ,[DelaisReg]
+                   ,[DateBL]
+                   ,[DateEcheance]
+                   ,[Etat_Titre]
+                   ,[TypeDoss]
+                   ,[NDoss]
+                   ,[NTTN]
+                   ,[ID_XReleveH]
+                   ,[NumPiece]
+                   ,[BureauDouane]
+                   ,[DelaiPaiement]
+                   ,[IncotermeTTN]
+                   ,[ListeBanques]
+                   ,[LstDocReg]
+                   ,[TRSTModePaiement]
+                   ,[RegimeStat]
+                   ,[TypeDDM]
+                   ,[User_Id_Create])
+                     VALUES (
+                    64bcb9c9-8551-4211-b7bc-ed307f15d7a3, 
+        			   6484017, 
+        			   2024-11-12 00:00:00, 
+        			   68, 
+        			   CLT20030017, 
+        			   , 
+        			   BIAT01, 
+        			   747.54, 
+        			   EUR, 
+        			   NULL, 
+                       NULL,
+        			   NULL,
+        				NULL, 
+        				1,
+        				TCE,
+        				D789TCEAP_33_W, 
+        				79660127, 
+        				NULL, 
+        				NULL, 
+                        NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL,
+        				TTNAUTO
+
+                    )
+        
+------ Inserted 1 new records into xtitre ------
+----------------------------------
+2024-11-13
+PULVERIT S.P.A
+2
+PULVERIT S.P.A
+SELECT * FROM tiers WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE ''
+
+CLT20030017
+['BIAT']
+select distinct Banque_XRT from Banque where Banque_XRT is not null AND Banque_XRT LIKE '%s'
+
+                    INSERT INTO [dbo].[xtitre]
+                        ([KeyTitre]
+                   ,[Titre_Num]
+                   ,[DateDomicilation]
+                   ,[FactNum]
+                   ,[Tiers_Code]
+                   ,[Fournisseur]
+                   ,[Titre_Banque]
+                   ,[Titre_Mnt]
+                   ,[Titre_Devise]
+                   ,[ModePaiement]
+                   ,[DelaisReg]
+                   ,[DateBL]
+                   ,[DateEcheance]
+                   ,[Etat_Titre]
+                   ,[TypeDoss]
+                   ,[NDoss]
+                   ,[NTTN]
+                   ,[ID_XReleveH]
+                   ,[NumPiece]
+                   ,[BureauDouane]
+                   ,[DelaiPaiement]
+                   ,[IncotermeTTN]
+                   ,[ListeBanques]
+                   ,[LstDocReg]
+                   ,[TRSTModePaiement]
+                   ,[RegimeStat]
+                   ,[TypeDDM]
+                   ,[User_Id_Create])
+                     VALUES (
+                    fbac67be-b86d-4ccb-8c6b-47d2ba3c1e18, 
+        			   6484017, 
+        			   2024-11-12 00:00:00, 
+        			   68, 
+        			   CLT20030017, 
+        			   , 
+        			   BIAT01, 
+        			   747.54, 
+        			   EUR, 
+        			   NULL, 
+                       NULL,
+        			   NULL,
+        				NULL, 
+        				1,
+        				TCE,
+        				D789TCEAP_33_W, 
+        				79660127, 
+        				NULL, 
+        				NULL, 
+                        NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL,
+        				TTNAUTO
+
+                    )
+        
+------ Inserted 1 new records into xtitre ------
+----------------------------------
+2024-11-13
+------ Inserted 0 new records into xtitre ------
+----------------------------------
+2024-11-13
+PULVERIT S.P.A
+2
+PULVERIT S.P.A
+PULVERIT S.P.A
+SELECT * FROM tiers WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE ''
+
+CLT20030017
+['BIAT']
+select distinct Banque_XRT from Banque where Banque_XRT is not null AND Banque_XRT LIKE '%s'
+
+                    INSERT INTO [dbo].[xtitre]
+                        ([KeyTitre]
+                   ,[Titre_Num]
+                   ,[DateDomicilation]
+                   ,[FactNum]
+                   ,[Tiers_Code]
+                   ,[Fournisseur]
+                   ,[Titre_Banque]
+                   ,[Titre_Mnt]
+                   ,[Titre_Devise]
+                   ,[ModePaiement]
+                   ,[DelaisReg]
+                   ,[DateBL]
+                   ,[DateEcheance]
+                   ,[Etat_Titre]
+                   ,[TypeDoss]
+                   ,[NDoss]
+                   ,[NTTN]
+                   ,[ID_XReleveH]
+                   ,[NumPiece]
+                   ,[BureauDouane]
+                   ,[DelaiPaiement]
+                   ,[IncotermeTTN]
+                   ,[ListeBanques]
+                   ,[LstDocReg]
+                   ,[TRSTModePaiement]
+                   ,[RegimeStat]
+                   ,[TypeDDM]
+                   ,[User_Id_Create])
+                     VALUES (
+                    3b94ca91-7e2a-496e-8ac1-aeea054069c4, 
+        			   6484017, 
+        			   2024-11-12 00:00:00, 
+        			   68, 
+        			   CLT20030017, 
+        			   , 
+        			   BIAT01, 
+        			   747.54, 
+        			   EUR, 
+        			   NULL, 
+                       NULL,
+        			   NULL,
+        				NULL, 
+        				1,
+        				TCE,
+        				D789TCEAP_33_W, 
+        				79660127, 
+        				NULL, 
+        				NULL, 
+                        NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL,
+        				TTNAUTO
+
+                    )
+        
+------ Inserted 1 new records into xtitre ------
+----------------------------------
+2024-11-13
+PULVERIT S.P.A
+words == PULVERIT%
+SELECT * FROM tiers WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE 'PULVERIT%'
+PULVERIT
+FP038
+['BIAT']
+select distinct Banque_XRT from Banque where Banque_XRT is not null AND Banque_XRT LIKE '%s'
+
+                    INSERT INTO [dbo].[xtitre]
+                        ([KeyTitre]
+                   ,[Titre_Num]
+                   ,[DateDomicilation]
+                   ,[FactNum]
+                   ,[Tiers_Code]
+                   ,[Fournisseur]
+                   ,[Titre_Banque]
+                   ,[Titre_Mnt]
+                   ,[Titre_Devise]
+                   ,[ModePaiement]
+                   ,[DelaisReg]
+                   ,[DateBL]
+                   ,[DateEcheance]
+                   ,[Etat_Titre]
+                   ,[TypeDoss]
+                   ,[NDoss]
+                   ,[NTTN]
+                   ,[ID_XReleveH]
+                   ,[NumPiece]
+                   ,[BureauDouane]
+                   ,[DelaiPaiement]
+                   ,[IncotermeTTN]
+                   ,[ListeBanques]
+                   ,[LstDocReg]
+                   ,[TRSTModePaiement]
+                   ,[RegimeStat]
+                   ,[TypeDDM]
+                   ,[User_Id_Create])
+                     VALUES (
+                    2cd6c444-44f6-4de6-853d-fba755685cf7, 
+        			   6484017, 
+        			   2024-11-12 00:00:00, 
+        			   68, 
+        			   FP038, 
+        			   PULVERIT, 
+        			   BIAT01, 
+        			   747.54, 
+        			   EUR, 
+        			   NULL, 
+                       NULL,
+        			   NULL,
+        				NULL, 
+        				1,
+        				TCE,
+        				D789TCEAP_33_W, 
+        				79660127, 
+        				NULL, 
+        				NULL, 
+                        NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL, 
+        				NULL,
+        				TTNAUTO
+
+                    )
+        
+------ Inserted 1 new records into xtitre ------
+----------------------------------
+2024-11-17
+------ Inserted 0 new records into xtitre ------
+----------------------------------
+2024-11-19
+------ Inserted 0 new records into xtitre ------
