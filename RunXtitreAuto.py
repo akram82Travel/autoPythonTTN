@@ -236,17 +236,17 @@ try:
                     modified_string = ' '.join(words[:-1]) + '%'  # Join all words except the last one
                     set_list_xtitre("words + 1"+modified_string)
                     if len(words) > 2:
-                        modified_string = ' '.join(words[:-2]) + '%'  # Join all words except the last one
+                        modified_string = ' %'.join(words[:-2]) + '%'  # Join all words except the last one
                         set_list_xtitre("words + 2"+modified_string)
             else:
                 if len(words) > 1:
-                    modified_string = ' '.join(words[:-1]) + '%'  # Join all words except the last one
+                    modified_string = ' %'.join(words[:-1]) + '%'  # Join all words except the last one
                     # modified_string = original_string
                     set_list_xtitre("words == "+modified_string)
 
             # Fetch existing Tiers from SQL Server
             queryFindTiers = "SELECT * FROM tiers " \
-                                    "WHERE (Tiers_Type = '07' or Tiers_Type = '02') AND Tiers_rs LIKE '%s'"
+                                    "WHERE (Tiers_Type = '07' or Tiers_Type = '02' or Tiers_Type = '01') AND Tiers_rs LIKE '%s'"
             # Generate the query with actual values for debugging
             formatted_query2 = queryFindTiers % modified_string
 
@@ -329,7 +329,7 @@ try:
             # Execute the insert query
             cursor_sql.execute(insert_query, (
                 key_titre, titre_num, date_domicilation, fact_num, Tiers_Code, fournisseur,
-                banque, titre_mnt, titre_devise, 0, TypeDoss, NDOSS, nttn, 'TTNAUTO'
+                banque, titre_mnt, titre_devise, 1, TypeDoss, NDOSS, nttn, 'TTNAUTO'
             ))
 
         # Commit the transaction after inserts
