@@ -4,8 +4,8 @@ import uuid
 import traceback
 from datetime import date
 # Track the last processed doc_id in a file
-LAST_PROCESSED_FILE = 'last_TTN.txt'
-LAST_PROCESSED_FILE_XT = 'list_Xtitre.txt'
+LAST_PROCESSED_FILE = 'D:\last_TTN.txt'
+LAST_PROCESSED_FILE_XT = 'D:\list_Xtitre.txt'
 
 
 def set_list_xtitre(titre: str):
