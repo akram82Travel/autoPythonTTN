@@ -2,7 +2,7 @@ import pymssql
 import psycopg2
 import uuid
 import traceback
-from datetime import date
+from datetime import datetime
 # Track the last processed doc_id in a file
 LAST_PROCESSED_FILE = 'D:\last_TTN.txt'
 LAST_PROCESSED_FILE_XT = 'D:\list_Xtitre.txt'
@@ -39,7 +39,7 @@ try:
     conn_pg = psycopg2.connect(dbname=database_pg, user='zedgres', password='zedgres', host=server_pg, port='5432', sslmode='disable')
     cursor_pg = conn_pg.cursor()
     set_list_xtitre('----------------------------------')
-    set_list_xtitre(date.today())
+    set_list_xtitre(datetime.now().strftime("%d/%m/%Y %H:%M:%S"))
     # Fetch data from PostgreSQL where num_domicialiation is not in existing_xtitre
     select_query = '''
                  SELECT 
