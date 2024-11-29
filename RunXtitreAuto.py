@@ -340,7 +340,7 @@ try:
     conn_pg.close()
     cursor_sql.close()
     conn_sql.close()
-    set_list_xtitre(f"------ Inserted {len(new_records)} new records into xtitre ------")
+    set_list_xtitre(f"------ Inserted {len(new_records)} new records into xtitre in {database_sql} ------")
 
 except Exception as e:
     print("An error occurred:", e)
