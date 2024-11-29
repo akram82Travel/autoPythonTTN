@@ -108,6 +108,9 @@ try:
             elif FournisseurImp == 'POLYCOFFRE':
                 database_sql = 'POLYCOFFRE'
                 print(database_sql)
+            elif FournisseurImp == '"MAS INTERNATIONALE SENEGAL"':
+                database_sql = '"MASINTERNATIONALSN"'
+                print(database_sql)
         elif TypeDoss == 2:
             if FournisseurExp == 'SOCIETE POLYBAT':
                 database_sql = 'POLYBAT'
@@ -120,6 +123,9 @@ try:
                 print(database_sql)
             elif FournisseurImp == 'POLYCOFFRE':
                 database_sql = 'POLYCOFFRE'
+                print(database_sql)
+            elif FournisseurImp == '"MAS INTERNATIONALE SENEGAL"':
+                database_sql = '"MASINTERNATIONALSN"'
                 print(database_sql)
 
         # Establish connection to SQL Server for xtitre
