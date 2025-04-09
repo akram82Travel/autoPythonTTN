@@ -1,0 +1,73 @@
+
+table {
+  width: 100%;
+}
+
+th.mat-sort-header-sorted {
+  color: black;
+}
+/* home.component.css */
+
+/* Target the paginator container */
+.mat-paginator {
+  background-color: #f5f5f5; /* Change background color */
+  border-radius: 4px;       /* Rounded corners */
+  padding: 8px;             /* Add some padding */
+}
+
+/* Style the previous and next buttons */
+.mat-button.mat-paginator-button {
+  color: #3f51b5;           /* Button color */
+  font-weight: bold;        /* Bold text */
+}
+
+/* Change hover effect for buttons */
+.mat-button.mat-paginator-button:hover {
+  background-color: #e0e0e0; /* Change background on hover */
+}
+
+/* Style the page size selector */
+.mat-select {
+  color: #3f51b5;           /* Change select box color */
+}
+
+/* Style the label text */
+.mat-paginator-range-label {
+  font-size: 12px;          /* Change font size */
+  color: #333;              /* Change text color */
+}
+/* home.component.css */
+
+/* Target the mat-table and reduce row height */
+.mat-table {
+  height: auto; /* Set to auto to allow rows to collapse */
+}
+
+/* Style the table header */
+.mat-header-cell {
+  padding: 2px 4px; /* Reduce padding for header cells */
+  font-size: 12px; /* Optionally reduce font size */
+}
+
+/* Style the table row cells */
+.mat-mdc-cell {
+  padding: 2px 4px; /* Reduce padding for row cells */
+  font-size: 10px; /* Optionally reduce font size */
+}
+/* Set a fixed height for the specific column (e.g., 'name') */
+.mat-mdc-cell.name-cell, .mat-mdc-header-cell.name-cell {
+  height: 30px; /* Set desired height */
+  line-height: 40px; /* Align text vertically */
+  padding: 0; /* Remove padding for tighter fit */
+}
+
+/* You can also adjust other column heights similarly */
+.mat-mdc-cell.weight-cell, .mat-mdc-header-cell.weight-cell {
+  height: 30px; /* Different height for weight column */
+  line-height: 30px; /* Align text vertically */
+  padding: 0; /* Remove padding for tighter fit */
+}
+/* Optional: Style the paginator to match the compact style */
+.mat-paginator {
+  margin-top: 8px; /* Add some margin for visual separation */
+}

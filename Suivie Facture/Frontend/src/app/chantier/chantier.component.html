@@ -1,0 +1,14 @@
+<mat-sidenav-content [style.marginLeft.px]="(collapseService.isCollapsed$ | async) ? 72 : 115" class="content">
+  <h2>List of Chantiers</h2>
+  <div class="card-container">
+    <mat-selection-list #shoes>
+      <mat-list-item *ngFor="let chantier of chantiers; let i = index" [class.clicked]="selectedChantier === chantier" (click)="navigateToOF(chantier)">
+        <mat-icon matListItemIcon>check</mat-icon>
+        <p matListItemLine>
+          {{chantier.DF}} - {{chantier.RefMarche}} - {{chantier.Chantier}}
+        </p>
+      </mat-list-item>
+    </mat-selection-list>
+  </div>
+  <router-outlet></router-outlet>
+</mat-sidenav-content>

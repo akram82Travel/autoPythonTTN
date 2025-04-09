@@ -1,0 +1,13 @@
+/* You can add global styles to this file, and also import other style files */
+
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+.ag-ltr .ag-cell {
+    border-right-width: 1px;
+    height: 30px !important;
+    line-height: 30px !important;
+  }
+  
+  .ag-row{
+    height: 42px !important;
+  }

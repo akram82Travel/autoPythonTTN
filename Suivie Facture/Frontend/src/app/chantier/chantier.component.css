@@ -1,0 +1,27 @@
+.card-container {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 16px;
+
+}
+
+.chantier-card {
+  cursor: pointer;
+  transition: transform 0.2s, background-color 0.2s;
+  width: 500px;
+  display: flex;
+  align-items: center;
+}
+
+.chantier-card:hover {
+  transform: scale(1.02);
+}
+
+.chantier-card.clicked {
+  background-color: #e0e0e082;
+}
+.chantier-count {
+  margin-bottom: 8px; /* Adjust as needed */
+  font-weight: bold;
+}

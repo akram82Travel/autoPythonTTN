@@ -1,0 +1,13 @@
+<h2 mat-dialog-title>Liste des Factures <b>{{facture.Facture}}</b></h2>
+<p  *ngIf="PaimentFact.length==0">Pas de reglement</p>
+
+<ag-grid-angular
+  [rowData]="rowData"
+  [columnDefs]="columnDefs"
+  [gridOptions]="gridOptions"
+  rowSelection="single"
+  [pagination]="true"
+  [domLayout]="'autoHeight'"
+  class="ag-theme-quartz" 
+  style="width: 100%; height: 100%;">
+</ag-grid-angular>

@@ -1,0 +1,15 @@
+<mat-sidenav-content [style.marginLeft.px]="(collapseService.isCollapsed$ | async) ? 72 : 115" class="content">
+  <h2>List of OFs du DF</h2>
+  <div class="card-container">
+<mat-selection-list #shoes *ngFor="let of of ofs let i = index">
+    <mat-list-item [class.clicked]="selectedOf === of"
+    (click)="navigateToTicket(of)">
+      <mat-icon matListItemIcon>check</mat-icon>
+      <p matListItemLine>
+        N° OF:{{of.OFD_Lot}} - Gamme: {{of.xGammeCH}} - Serie: {{of.xSerieCH}} - Date Debut: {{of.OF_Date}} - Date fin: {{of.OF_DateFin}}
+      </p>
+    </mat-list-item>
+</mat-selection-list>
+  </div>
+  <router-outlet></router-outlet>
+</mat-sidenav-content>

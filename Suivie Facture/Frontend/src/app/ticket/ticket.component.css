@@ -1,0 +1,42 @@
+.image-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.image-card {
+  background-color: #333;
+  color: #fff;
+  width: 270px;
+  padding: 2px;
+  text-align: center;
+  border-radius: 45px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.image-card img {
+  width: 100%;
+  height: auto;
+}
+
+.image-details {
+  margin-top: 10px;
+}
+.big-white-icon {
+  font-size: 48px;  /* Adjust the size as needed */
+  color: white;     /* Set the icon color to white */
+}
+.tiket-image {
+  width: 100px;  /* Adjust to your design */
+  height: 100px; /* Adjust to your design */
+}
+
+.placeholder-icon {
+  font-size: 48px;  /* Size of the placeholder icon */
+  color: gray;      /* Color of the placeholder icon */
+  display: inline-block;
+  width: 100px;    /* Same as the image width */
+  height: 100px;   /* Same as the image height */
+  text-align: center;
+  line-height: 100px;  /* Vertically align the icon */
+}

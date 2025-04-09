@@ -1,0 +1,26 @@
+<mat-sidenav-content [style.marginLeft.px]="(collapseService.isCollapsed$ | async) ? 72 : 115" class="content">
+   <h2>List des Tickets</h2>
+<div class="image-grid">
+  <div class="image-card" *ngFor="let tiket of tikets; let i = index">
+    <img 
+    [src]="tiket.src" 
+    alt="Image" 
+    (error)="onImageError($event)"  
+    class="tiket-image"
+  >
+    
+    <div class="image-details">
+      <p>Nom Art: {{tiket.Designation}}</p>
+      <p>Qte: {{tiket.Quantite}}</p>
+    </div>
+    
+    <mat-card-actions>
+      <button mat-button>
+        <mat-icon class="big-white-icon">print</mat-icon>
+      </button>
+    </mat-card-actions>
+  </div>
+  
+</div>
+<router-outlet></router-outlet>
+</mat-sidenav-content>

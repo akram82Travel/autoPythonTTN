@@ -1,0 +1,48 @@
+<h2 mat-dialog-title>Mode de reglement facture N° <b>{{facture.Facture}}</b></h2>
+
+<mat-dialog-content>
+  
+  <form [formGroup]="paymentForm"  (submit)="editModePaiement()"> 
+    <!-- Standard Method Select -->
+    <mat-form-field appearance="fill" style="width: 20%;">
+      <mat-label>Méthode</mat-label>
+      <mat-select formControlName="standardMethod">
+        <mat-option *ngFor="let chantier of dataSource; let i = index" [value]="chantier.ModeReg_Code">
+          {{ chantier.ModeReg_Libelle }}
+        </mat-option>
+      </mat-select>
+    </mat-form-field>
+    <mat-form-field appearance="fill" style="width: 20%;">
+      <mat-label>Durée</mat-label>
+      <input matInput type="number" formControlName="dureePayment">
+    </mat-form-field>
+    <!-- Dynamic Percentages -->
+    <mat-form-field appearance="fill" style="width: 15%;">
+      <mat-label>En avance (%)/Montant</mat-label>
+      <input matInput type="number" formControlName="advancePayment">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" style="width: 15%;">
+      <mat-label>Réception (%)</mat-label>
+      <input matInput type="number" formControlName="receptionPayment">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" style="width: 15%;">
+      <mat-label>Après pose (%)</mat-label>
+      <input matInput type="number" formControlName="postInstallationPayment">
+    </mat-form-field>
+
+    <mat-form-field appearance="fill" style="width: 15%;">
+      <mat-label>Fin marché  (%)</mat-label>
+      <input matInput type="number" formControlName="endOfContractPayment">
+    </mat-form-field>
+
+    <button mat-button type="submit" cdkFocusInitial  *ngIf="PaimentFact.length==0">Modifier</button>
+  </form>
+
+</mat-dialog-content>
+
+<mat-dialog-actions>
+  <button mat-button (click)="onNoClick()">Fermer</button>
+  
+</mat-dialog-actions>
